@@ -21,7 +21,7 @@
 					<div id="intro">
 						<h1>Cartography Portfolio<br />
 						Emma van Weel</h1>
-						<p> Explore a diverse collection of maps created usin various map-makin software, showcasin my expertise in digital cartography. </p>
+						<p> Explore a diverse collection of maps created using various map-making software, showcasing my expertise in digital cartography. </p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -42,7 +42,6 @@
 							<li class="active"><a href="map.4.html">Map 4</a></li>
 							<li><a href="map5.html">Map 5</a></li>
 							<li><a href="map6.html">Map 6</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/profile.php?id=61550059149312" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
@@ -58,13 +57,12 @@
 								<header class="major">
 									<span class="date">June 24th, 2024</span>
 									<h1>Relative Elevation Model</h1>
-									<p>Creating a comparison map of Sustainability Development Goals(SDG) indicators with QGIS on Esri online</p>
+									<p>This map shows a stylized relative elevation model of the Biesbosch made with raster calculations.</p>
 								</header>
 								<a href="map4.html" class="image fit"><img src="images/REM.jpg" alt="" /></a>
-								<p>The SDG indicators that are made into choropleth maps for comparison are 15.1.1 and 15.1.2. Indicator 15.1.1 contains the data of the forest area as a percentage of total land area and indicator 15.1.2 contains the data of the average proportion of Terrestrial Key Biodiversity Areas (KBAs) covered by protected areas. This second indicator has been chosen because forest areas are often rich in biodiversity. Therefore, many terrestrial KBAs are most likely located within forested regions because these areas tend to have high levels of endemic species and unique ecosystems that need protection to be conserved. 
-									A choropleth map is a type of map that uses different shades of colors to show the value of a specific variable across geographic areas. They provide a clear and simple visual representation of complex data and are therefore widely used. However, they must be designed carefully to avoid misleading viewers, especially by normalizing data to account for differences in area and population size. 
-									To make the choropleth maps, a clean world map first needed to be uploaded in QGIS. Then, a shape file of the data was downloaded from the UN SDG indicator meta database and uploaded to QGIS. Next, the data from the world map and the indicator had to be joined to make sure the values are coupled to the right countries. The joined data was then graduated and styled after which the word map and indicator were deactivated. Lastly, the projection was changed to ‘equal area’ for the right representation showing that the earth is round. The map was then printed and turned into a pdf after adding a legend.</p>
-								<p>These maps visualize the forest area as a percentage of total land area and the average proportion of Terrestrial Key Biodiversity Areas (KBAs) covered by protected areas. When comparing these maps, it is striking that the middle of Africa and Brazil have a lot of forest area but not a lot of KBAs. Europe on the other hand, doesn’t have a lot of forest area but a lot of KBAs.</p>
+								<p>This map shows a stylized relative elevation model of the Biesbosch in Brabant made with raster calculations. The Biesbosch is a low-lying freshwater tidal wetland in the Netherlands, with much of its landscape near or below sea level. This slight elevation variation supports diverse habitats and keeps the river controlled.</p>
+								<p>To create this detailed elevation map, I first merged the Digital Terrain Model (DTM) files of the area and converted them to a GEOTIFF file to extract the raster data. This conversion was essential to standardize the data format for further processing. I then adjusted the symbology to highlight the range from the highest to lowest elevation, providing a clear visual representation of the terrain. To enhance the map’s definition, I added hillshade. Following this, I created a cross-section of the entire map along the river to analyze the elevation profile. I then interpolated the Digital Surface Model (DSM) to estimate elevation changes based on the cross-section, and finally performed raster calculations to refine the elevation data.</p>
+								<p>The stretch is chosen to show the dikes and higher ground around the river. However, the area around the river is still relatively low. Therefore, there is significant risk of floods in this area despite of the dikes, especially on the north side. This information is helpful to address issues related to Sustainable Development Goal 15: Life on Land where river management is part of.</p>
 		
 					</div>
 
@@ -104,8 +102,8 @@
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=61550059149312" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/emmavanweel/emmavanweel.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>

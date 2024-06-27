@@ -21,7 +21,7 @@
 					<div id="intro">
 						<h1>Cartography Portfolio<br />
 						Emma van Weel</h1>
-						<p> Explore a diverse collection of maps created usin various map-makin software, showcasin my expertise in digital cartography. </p>
+						<p> Explore a diverse collection of maps created using various map-making software, showcasing my expertise in digital cartography. </p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -42,7 +42,6 @@
 							<li><a href="map4.html">Map 4</a></li>
 							<li><a href="map5.html">Map 5</a></li>
 							<li class="active"><a href="map.6.html">Map 6</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/profile.php?id=61550059149312" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
@@ -56,15 +55,14 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">June 16th, 2024</span>
-									<h1>Choropleth map</h1>
-									<p>Creating a comparison map of Sustainability Development Goals(SDG) indicators with QGIS on Esri online</p>
+									<span class="date">June 26th, 2024</span>
+									<h1>3D webscene</h1>
+									<p>This webscene is a 3D map of Scheveningen in The Hague made with LiDAR data.</p>
 								</header>
-								<iframe src="https://uni-utrecht.maps.arcgis.com/apps/Compare/index.html?appid=1b5065426cae4904834d727edf6a4be7" width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
-								<p>The SDG indicators that are made into choropleth maps for comparison are 15.1.1 and 15.1.2. Indicator 15.1.1 contains the data of the forest area as a percentage of total land area and indicator 15.1.2 contains the data of the average proportion of Terrestrial Key Biodiversity Areas (KBAs) covered by protected areas. This second indicator has been chosen because forest areas are often rich in biodiversity. Therefore, many terrestrial KBAs are most likely located within forested regions because these areas tend to have high levels of endemic species and unique ecosystems that need protection to be conserved. 
-									A choropleth map is a type of map that uses different shades of colors to show the value of a specific variable across geographic areas. They provide a clear and simple visual representation of complex data and are therefore widely used. However, they must be designed carefully to avoid misleading viewers, especially by normalizing data to account for differences in area and population size. 
-									To make the choropleth maps, a clean world map first needed to be uploaded in QGIS. Then, a shape file of the data was downloaded from the UN SDG indicator meta database and uploaded to QGIS. Next, the data from the world map and the indicator had to be joined to make sure the values are coupled to the right countries. The joined data was then graduated and styled after which the word map and indicator were deactivated. Lastly, the projection was changed to ‘equal area’ for the right representation showing that the earth is round. The map was then printed and turned into a pdf after adding a legend.</p>
-								<p>These maps visualize the forest area as a percentage of total land area and the average proportion of Terrestrial Key Biodiversity Areas (KBAs) covered by protected areas. When comparing these maps, it is striking that the middle of Africa and Brazil have a lot of forest area but not a lot of KBAs. Europe on the other hand, doesn’t have a lot of forest area but a lot of KBAs.</p>
+								<a href="map4.html" class="image fit"><img src="images/3D.jpg" alt="" /></a>
+								<p>This is a screenshot of a 3D web scene of Scheveningen in The Hague. To create this map, I uploaded RGB, DSM, and DTM files containing the 2D XY coordinates of the area to a world map in ArcGIS. Next, I converted an LAZ file containing the 3D Z coordinates of the area to LAS format using the appropriate software and loaded this new file into the map. Utilizing the 3D view in ArcGIS, I explored different data layers. I generated hillshade and 3D visualizations for better analysis and used the available tools to take necessary measurements. Unfortunately, the interactive web scene could not be published, so only a screenshot is visible on this website.</p>
+								<p>When classifying the LiDAR points in the LAS file, I chose intensity for the symbology. This measures the amplitude of the reflected LiDAR pulse, which varies for every point depending on the type of surface, angle, wavelength, and distance. This made the map very detailed, showing differences in objects visible in the area. You can now easily distinguish between the beach, sea, pier, buildings, and streets. I kept the color scheme in black and white to keep it simple. The outcome is shown below. This perspective was also used to measure the height of the Ferris wheel. </p>
+								<a href="map4.html" class="image fit"><img src="images/intensity.jpg" alt="" /></a>
 		
 					</div>
 
@@ -104,8 +102,8 @@
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=61550059149312" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/emmavanweel/emmavanweel.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
