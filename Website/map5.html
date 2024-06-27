@@ -21,7 +21,7 @@
 					<div id="intro">
 						<h1>Cartography Portfolio<br />
 						Emma van Weel</h1>
-						<p> Explore a diverse collection of maps created usin various map-makin software, showcasin my expertise in digital cartography. </p>
+						<p> Explore a diverse collection of maps created using various map-makin software, showcasing my expertise in digital cartography. </p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -56,15 +56,14 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">June 16th, 2024</span>
+									<span class="date">June 25th, 2024</span>
 									<h1>CSPI map</h1>
-									<p>Creating a comparison map of Sustainability Development Goals(SDG) indicators with QGIS on Esri online</p>
+									<p>This map visualizes the Carbon Sequestration Potential Index (CSPI) of Okinawa in GEE.</p>
 								</header>
 								<iframe src="https://ee-emmavanweel2.projects.earthengine.app/view/cspi" width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
-								<p>The SDG indicators that are made into choropleth maps for comparison are 15.1.1 and 15.1.2. Indicator 15.1.1 contains the data of the forest area as a percentage of total land area and indicator 15.1.2 contains the data of the average proportion of Terrestrial Key Biodiversity Areas (KBAs) covered by protected areas. This second indicator has been chosen because forest areas are often rich in biodiversity. Therefore, many terrestrial KBAs are most likely located within forested regions because these areas tend to have high levels of endemic species and unique ecosystems that need protection to be conserved. 
-									A choropleth map is a type of map that uses different shades of colors to show the value of a specific variable across geographic areas. They provide a clear and simple visual representation of complex data and are therefore widely used. However, they must be designed carefully to avoid misleading viewers, especially by normalizing data to account for differences in area and population size. 
-									To make the choropleth maps, a clean world map first needed to be uploaded in QGIS. Then, a shape file of the data was downloaded from the UN SDG indicator meta database and uploaded to QGIS. Next, the data from the world map and the indicator had to be joined to make sure the values are coupled to the right countries. The joined data was then graduated and styled after which the word map and indicator were deactivated. Lastly, the projection was changed to ‘equal area’ for the right representation showing that the earth is round. The map was then printed and turned into a pdf after adding a legend.</p>
-								<p>These maps visualize the forest area as a percentage of total land area and the average proportion of Terrestrial Key Biodiversity Areas (KBAs) covered by protected areas. When comparing these maps, it is striking that the middle of Africa and Brazil have a lot of forest area but not a lot of KBAs. Europe on the other hand, doesn’t have a lot of forest area but a lot of KBAs.</p>
+								<p>The Carbon Sequestration Potential Index (CSPI) visualizes the potential for above-ground carbon sequestration in a given area. This potential is influenced by several factors, including Gross Primary Production (GPP), Aboveground Carbon Density (ACD), and Forest Cover (FC). GPP is the rate at which carbon dioxide is fixed from the atmosphere through photosynthesis, ACD is the amount of carbon stored above ground, and FC represents the percentage of the area covered by forests, focusing on forested regions.</p>
+								<p>To create this map, data for Okinawa was first downloaded from the government website, including shapefiles and GeoTIFF files containing the coordinates. This data was then processed using preprogrammed Google Earth Engine (GEE) code to apply the GPP, ACD, and Forest Cover functions. The result is an interactive GEE map displaying individual ACD and GPP values.</p>
+								<p>The map covers Okinawa, a Japanese island characterized by coral reefs, rugged coastlines, sandy beaches, and hilly regions. This unique environment supports diverse marine life and vegetation. This map can assist in sustainable land management decisions, such as reforestation in areas with low GPP and conservation of regions with high GPP. It is also relevant to addressing issues related to Sustainable Development Goal 15: Life on Land.</p>
 		
 					</div>
 
